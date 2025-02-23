@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "801934460564",
+    "firebase_url": "https://campus-ah-moment-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "campus-ah-moment",
+    "storage_bucket": "campus-ah-moment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801934460564:android:361b545fb640a28cded681",
+        "android_client_info": {
+          "package_name": "campusahmoment.id.saturday_firebase_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDftANYIfnLQg2Jbo3CTIhSvkvj1o7NycQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
