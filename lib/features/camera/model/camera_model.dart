@@ -1,25 +1,25 @@
 import 'dart:convert';
 
-class BiodataModel {
+class CameraModel {
   final String id;
   final String name;
   final int age;
   final String address;
 
-  BiodataModel({
+  CameraModel({
     required this.id,
     required this.name,
     required this.age,
     required this.address,
   });
 
-  BiodataModel copyWith({
+  CameraModel copyWith({
     String? id,
     String? name,
     int? age,
     String? address,
   }) {
-    return BiodataModel(
+    return CameraModel(
       id: id ?? this.id,
       name: name ?? this.name,
       age: age ?? this.age,
@@ -36,8 +36,8 @@ class BiodataModel {
     };
   }
 
-  factory BiodataModel.fromMap(Map<String, dynamic> map) {
-    return BiodataModel(
+  factory CameraModel.fromMap(Map<String, dynamic> map) {
+    return CameraModel(
       id: map['id'] as String,
       name: map['name'] as String,
       age: map['age'] as int,
@@ -47,16 +47,16 @@ class BiodataModel {
 
   String toJson() => json.encode(toMap());
 
-  factory BiodataModel.fromJson(String source) =>
-      BiodataModel.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory CameraModel.fromJson(String source) =>
+      CameraModel.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
   String toString() {
-    return 'BiodataModel(id: $id, name: $name, age: $age, address: $address)';
+    return 'CameraModel(id: $id, name: $name, age: $age, address: $address)';
   }
 
   @override
-  bool operator ==(covariant BiodataModel other) {
+  bool operator ==(covariant CameraModel other) {
     if (identical(this, other)) return true;
 
     return other.id == id &&
