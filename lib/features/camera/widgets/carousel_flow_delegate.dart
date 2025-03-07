@@ -14,15 +14,10 @@ class CarouselFlowDelegate extends FlowDelegate {
   @override
   void paintChildren(FlowPaintingContext context) {
     final count = context.childCount;
-
     final size = context.size.width;
-
     final itemExtent = size / filtersPerScreen;
-
     final active = viewportOffset.pixels / itemExtent;
-
     final min = math.max(0, active.floor() - 3).toInt();
-
     final max = math.min(count - 1, active.ceil() + 3).toInt();
 
     for (var index = min; index <= max; index++) {
